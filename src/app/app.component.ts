@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'angular-site';
+  todos: Todo[] = []
+
+  addTodo(text: string) {
+    this.todos.push({ text })
+  }
+
+  deleteTodo(index: number) {
+    this.todos = this.todos.filter((todo: Todo, filterIndex: number) => {
+      return index !== filterIndex
+    })
+  }
+}
+
+interface Todo {
+  text: String
+}
+
+export type {
+  Todo
 }

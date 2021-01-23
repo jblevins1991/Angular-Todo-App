@@ -1,0 +1,15 @@
+<div id="todo-input-wrapper">
+  <input
+    #todoInputText
+    id="todo-input"
+    type="text"
+    placeholder="Enter new todo"
+  />
+
+  <button
+    id="add-btn"
+    (click)="retrieveTodoText(todoInputText)"
+  >
+    Add
+  </button>
+</div>

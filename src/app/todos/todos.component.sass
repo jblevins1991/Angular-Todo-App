@@ -1,0 +1,35 @@
+.todos
+  display: flex
+  flex-direction: column
+  padding-left: 1rem
+
+  .todo
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    margin: 0 .5rem
+    margin-top: 0
+    border-bottom: 1px black solid
+
+    &:last-child
+      border: none
+
+    .actions
+      display: flex
+      flex-direction: row
+      align-items: center
+
+      .update-btn
+        background-color: blue
+        color: white
+        padding: 1rem
+        border: none
+        outline: none
+
+      .delete-btn
+        background-color: red
+        color: white
+        padding: 1rem
+        border: none
+        outline: none

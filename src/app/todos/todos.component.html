@@ -1,0 +1,14 @@
+<ul class="todos">
+  <li class="todo" *ngFor="let todo of todos; let i = index">
+    <p class="text">{{ todo.text }}</p>
+
+    <div class="actions">
+      <button
+        class="delete-btn"
+        (click)="deleteTodo(i)"
+      >
+        delete
+      </button>
+    </div>
+  </li>
+</ul>
